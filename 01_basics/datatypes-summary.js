@@ -32,6 +32,32 @@ const myfunction = function(){
     console.log("Hello world");
 }
 
-console.log(typeof heros);
+console.log(typeof anotherId);
 
-// https://262.ecma-international.org/5.1/#sec-11.4.3
+// https://262.ecma-international.org/5.1/#sec-11.4.3 
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myYoutubename = "nareshbhavnagardotcom"
+
+let anothername = myYoutubename
+anothername = "omrudray"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let useTow = userOne
+
+userTow.email = "naresh@google.com"
+
+console.log(userOne.email);
+console.log(userTow.email);
