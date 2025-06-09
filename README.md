@@ -1,2 +1,2 @@
-# js-hindi-youtube
-A code repo for javascript series at Chai aur code youtube channel
+# js-runr
+A code repo for javascript series at midnight-runr
