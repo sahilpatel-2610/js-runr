@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div id="images">
+      <li><img width="7266px" id="Manpose" src="https://images.pexels.
+            com/photos//pexels-photo-32472554.jpeg?auto=compress&
+            cs=tinysrgb&w=4846&lazy=load" alt="Manpose"></li>
+            <li><img width="4604px" id="London" src="https://images.pexels.com/
+            photos/30214492/pexels-photo-30214492.jpeg?auto=compress&
+            cs=tinysrgb&w=6902&lazy=load" alt="London"></li>
+            <li><img width="2774px" id="Naathhills" src="https://images.pexels.com/
+            photos/29258551/pexels-photo-29258551.jpeg?auto=compress&
+            cs=tinysrgb&w=4158&lazy=load" alt="Naathhills"></li>
+            <li><img width="1987px" id="Skybird" src="https://images.pexels.com/
+            photos/29511738/pexels-photo-29511738.jpeg?auto=compress&
+            cs=tinysrgb&w=2978&lazy=load" alt="Skybird" ></li>
+            <li><img width="3646px" id="Spider" src="https://images.pexels.
+            com/photos/29503185/pexels-photo-29503185.jpeg?auto=compress&
+            cs=tinysrgb&w=5467&lazy=load" alt="Spider"></li>
+            <li><a style="color: aliceblue;" href="https://google.com" 
+            id="google">Google</a></li>
+    </div>
+</body>
+<script>
+    // document.getElementById('oel').onclick = function () {
+    //     alert("owl clicked")
+    // }
+
+       // attachEvent()
+    // jQuery - on
+
+    // type, timetamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkry, shiftkey, keyCode
+ 
+    // document.getElementById('images').addEventListener
+    //     ('click', function(e){
+    //     console.log("click inside the ul");
+    //     e.stopPropagation()
+    // }, false)
+
+    // document.getElementById('Skybird').addEventListener
+    //     ('click', function(e){
+    //     console.log("Skybird clicked");
+    //     e.stopPropagation()
+    // }, false)
+
+    // document.getElementById('google').addEventListener
+    //     ('click', function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation()
+    //     console.log("googgle clicked");
+    // }, false)
+
+    document.querySelector('#images').addEventListener
+    ('click', function(e){
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+        
+    })
+
+    // removeIt.parentNode.removeChild(removeIt)
+    
+</script>
+</html>
