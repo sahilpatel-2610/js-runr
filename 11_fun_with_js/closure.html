@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure aur mid</title>
+</head>
+<body style="background-color: #313131;">
+    <button id="teal">Teal</button>
+    <button id="maroon">Maroon</button>
+    <button id="sky blue">Sky Blue</button>
+    <button id="navy blue">Navy Blue</button>
+    <button id="royal blue">Royal Blue</button>
+    <button id="turquoise">Turquoise</button>
+    <button id="olive">Olive</button>
+    <button id="lime">Lime</button>
+    <button id="burgundy">Burgundy</button>
+    <button id="coral">Coral</button>
+    <button id="salmon">Salmon</button>
+    <button id="peach">Peach</button>
+    <button id="lavender">Lavender</button>
+    <button id="violet">Violet</button>
+    <button id="magenta">Magenta</button>
+    <button id="cyan">Cyan</button>
+    <button id="mint">Mint</button>
+    <button id="beige">Beige</button>
+    <button id="tan">Tan</button>
+    <button id="gold">Gold</button>
+    <button id="silver">Silver</button>
+    <button id="midnight blue">Midnight Blue</button>
+    <button id="forest green">Forest Green</button>
+  
+</body>
+
+    <script>
+    // function init() {
+    //     let name = "Mozilla"; 
+    //     function displayName() {
+    //         console.log(name); 
+    //     }    
+    //     displayName();
+    // }
+    // init();
+
+    // function outer(){
+    //     let username = "naresh"
+    //     console.log("OUTER", secret);
+    //     function inner(){
+    //         let secret = "my123"
+    //         console.log("inner", username);
+    //     }
+    //     function innerTow(){
+    //         console.log("innerTow", username);
+    //         console.log(secret);
+    //     }
+    //     inner()
+    //     innerTow()
+    
+    // }
+    // outer()
+    // console.log("TOO OUTER", username);
+    
+
+    // function makeFunc() {
+    //      const name = "Mozilla";
+    //     function displayName() {
+    //         console.log(name);
+    //     }
+    //     return displayName;
+    // }
+
+    // const myFunc = makeFunc();
+    // myFunc();
+   
+    </script>
+    <script>
+        // document.getElementById("teal").onclick = function(){
+        //     document.body.style.backgroundColor = `teal`
+        // }
+        // document.getElementById("maroon").onclick = function(){
+        //     document.body.style.backgroundColor = `maroon`
+        // }
+
+        function clickHandler(color){
+            // document.body.style.backgroundColor = `${color}`
+
+            return function(){
+                document.body.style.backgroundColor = `${color}`
+            } 
+
+        }
+
+        document.getElementById('teal').onclick = clickHandler("teal")
+        document.getElementById('maroon').onclick = clickHandler("maroon")
+        document.getElementById('sky blue').onclick = clickHandler("sky blue")
+        document.getElementById('navy blue').onclick = clickHandler("navy blue")
+        document.getElementById('royal blue').onclick = clickHandler("royal blue")
+        document.getElementById('turquoise').onclick = clickHandler("turquoise")
+        document.getElementById('olive').onclick = clickHandler("olive")
+        document.getElementById('lime').onclick = clickHandler("lime")
+        document.getElementById('burgundy').onclick = clickHandler("burgundy")
+        document.getElementById('coral').onclick = clickHandler("coral")
+        document.getElementById('salmon').onclick = clickHandler("salmon")
+        document.getElementById('peach').onclick = clickHandler("peach")
+        document.getElementById('lavender').onclick = clickHandler("lavender")
+        document.getElementById('violet').onclick = clickHandler("violet")
+        document.getElementById('magenta').onclick = clickHandler("magenta")
+        document.getElementById('cyan').onclick = clickHandler("cyan")
+        document.getElementById('mint').onclick = clickHandler("mint")
+        document.getElementById('beige').onclick = clickHandler("beige")
+        document.getElementById('tan').onclick = clickHandler("tan")
+        document.getElementById('gold').onclick = clickHandler("gold")
+        document.getElementById('silver').onclick = clickHandler("silver")
+        document.getElementById('midnight blue').onclick = clickHandler("midnight blue")
+        document.getElementById('forest green').onclick = clickHandler("forest green")
+    
+    </script>
+</html>
